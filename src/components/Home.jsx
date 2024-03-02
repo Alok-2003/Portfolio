@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import  Typewriter  from 'typewriter-effect'
+import Typewriter from 'typewriter-effect'
 
 const Home = () => {
 
@@ -35,9 +35,34 @@ const Home = () => {
                     <motion.h1  {...animation.h1}>
                         Hi, I Am <br /> Abhishek Singh
                     </motion.h1>
-                    <Typewriter options={{strings:["A developer", "A designer" ]}}>
+                    <Typewriter
+                        options={{
+                            strings: ["A Developer", "A Designer", "A Creator"],
+                            autoStart: true,
+                            loop: true,
+                            cursor: "",
+                            wrapperClassName: "typewriterpara",
+                        }}
+                    />
+                    <div>
+                        <a href="mailto:official.6packprogrammer@gmail.com">Hire Me</a>
+                        <a href="#work">
+                            Projects <BsArrowUpRight />
+                        </a>
+                    </div>
 
-                    </Typewriter>
+                    <article>
+                        <p>
+                            +
+                            {ratio < 2 && (
+                                <motion.span
+                                    whileInView={animationClientsCount}
+                                    ref={clientCount}
+                                ></motion.span>
+                            )}
+                        </p>
+                        <span>Clients Worldwide</span>
+                    </article>
                 </div>
             </section>
             <section></section>
