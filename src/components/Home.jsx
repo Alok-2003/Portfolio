@@ -63,6 +63,27 @@ const Home = () => {
                         </p>
                         <span>Clients Worldwide</span>
                     </article>
+                    <aside>
+                        <article>
+                            <p>
+                                +
+                                {ratio < 2 && (
+                                    <motion.span
+                                        ref={projectCount}
+                                        whileInView={animationProjectsCount}
+                                    >
+                                        500
+                                    </motion.span>
+                                )}
+                            </p>
+                            <span>Projects Done</span>
+                        </article>
+
+                        <article data-special>
+                            <p>Contact</p>
+                            <span>official.6packprogrammer@gmail.com</span>
+                        </article>
+                    </aside>
                 </div>
             </section>
             <section></section>
