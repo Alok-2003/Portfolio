@@ -86,7 +86,9 @@ const Home = () => {
                     </aside>
                 </div>
             </section>
-            <section></section>
+            <section>
+                <img src={me} alt="Abhishek" />
+            </section>
         </div>
     )
 }
