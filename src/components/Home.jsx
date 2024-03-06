@@ -20,7 +20,7 @@ const Home = ({ ratio }) => {
         });
     };
 
-    const animation = {
+    const animations = {
         h1: {
             initial: {
                 x: "-100%",
@@ -29,8 +29,7 @@ const Home = ({ ratio }) => {
             whileInView: {
                 x: 0,
                 opacity: 1,
-
-            }
+            },
         },
         button: {
             initial: {
@@ -40,10 +39,9 @@ const Home = ({ ratio }) => {
             whileInView: {
                 y: 0,
                 opacity: 1,
-
-            }
-        }
-    }
+            },
+        },
+    };
     return (
         <div id='home'>
             <section>
