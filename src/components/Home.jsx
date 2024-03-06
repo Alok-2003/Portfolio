@@ -46,9 +46,11 @@ const Home = ({ ratio }) => {
         <div id='home'>
             <section>
                 <div>
+
                     <motion.h1  {...animation.h1}>
                         Hi, I Am <br /> Abhishek Singh
                     </motion.h1>
+
                     <Typewriter
                         options={{
                             strings: ["A Developer", "A Designer", "A Creator"],
@@ -77,6 +79,7 @@ const Home = ({ ratio }) => {
                         </p>
                         <span>Clients Worldwide</span>
                     </article>
+
                     <aside>
                         <article>
                             <p>
@@ -98,6 +101,7 @@ const Home = ({ ratio }) => {
                             <span>official.6packprogrammer@gmail.com</span>
                         </article>
                     </aside>
+                    
                 </div>
             </section>
             <section>
