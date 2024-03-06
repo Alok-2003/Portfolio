@@ -1,8 +1,11 @@
-import React from 'react'
-import { motion } from "framer-motion"
-import Typewriter from 'typewriter-effect'
+import React from 'react';
+import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect';
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 
-const Home = () => {
+const Home = ({ ratio }) => {
+    const clientCount = useRef(null);
+    const projectCount = useRef(null);
 
     const animation = {
         h1: {
