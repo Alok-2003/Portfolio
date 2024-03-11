@@ -6,7 +6,26 @@ const Contact = () => {
   const [name, setName] = useState("");
 
 
-
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    setDisableBtn(true);
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        message,
+      });
+      setName("");
+      setEmail("");
+      setMessage("");
+      toast.success("Message Sent");
+      setDisableBtn(false);
+    } catch (error) {
+      toast.error("Error");
+      console.log(error);
+      setDisableBtn(false);
+    }
+  };
 
   const animations = {
     form: {
