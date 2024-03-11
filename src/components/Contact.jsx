@@ -8,7 +8,32 @@ const Contact = () => {
 
 
 
+  const animations = {
+    form: {
+      initial: {
+        x: "-100%",
+        opacity: 0,
+      },
+      whileInView: {
+        x: 0,
+        opacity: 1,
+      },
+    },
 
+    button: {
+      initial: {
+        y: "-100%",
+        opacity: 0,
+      },
+      whileInView: {
+        y: 0,
+        opacity: 1,
+      },
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
   return (
     <div id="contact">
       <section>
