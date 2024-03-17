@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
@@ -47,7 +47,7 @@ const Home = ({ ratio }) => {
             <section>
                 <div>
 
-                    <motion.h1  {...animation.h1}>
+                    <motion.h1  {...animations.h1}>
                         Hi, I Am <br /> Alok kumar yadav
                     </motion.h1>
 
@@ -101,11 +101,11 @@ const Home = ({ ratio }) => {
                             <span>official.6packprogrammer@gmail.com</span>
                         </article>
                     </aside>
-                    
+
                 </div>
             </section>
             <section>
-                <img src={me} alt="Abhishek" />
+                <img src={"me"} alt="Abhishek" />
             </section>
         </div>
     )
