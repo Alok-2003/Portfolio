@@ -1,29 +1,55 @@
-import React from 'react'
+import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
-const Header = () => {
-  return (
-    <div>
-      <NavContent />
-    </div>
-  )
-}
-const NavContent = () => {
+const Header = ({ setMenuOpen, menuOpen }) => {
   return (
     <>
-      <h2>Alok </h2>
-      <div>
-        <a href="#home">Home</a>
-        <a href="#Work">Work</a>
-        <a href="#timeLine">Experience</a>
-        <a href="#services">Services</a>
-        <a href="#testimonial">Testimonial</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="mailto:alok953280@gmail.com">
-        <button>Email</button>
-      </a>
-    </>
-  )
-}
+      <nav>
+        <NavContent setMenuOpen={setMenuOpen} />
+      </nav>
 
-export default Header
+      <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
+        <AiOutlineMenu />
+      </button>
+    </>
+  );
+};
+
+export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
+  return (
+    <div className={`navPhone ${menuOpen ? "navPhoneComes" : ""}`}>
+      <NavContent setMenuOpen={setMenuOpen} />
+    </div>
+  );
+};
+
+const NavContent = ({ setMenuOpen }) => (
+  <>
+    <h2>Abhishek.</h2>
+    <div>
+      <a onClick={() => setMenuOpen(false)} href="#home">
+        Home
+      </a>
+      <a onClick={() => setMenuOpen(false)} href="#work">
+        Work
+      </a>
+      <a onClick={() => setMenuOpen(false)} href="#timeline">
+        Experience
+      </a>
+      <a onClick={() => setMenuOpen(false)} href="#services">
+        Services
+      </a>
+      <a onClick={() => setMenuOpen(false)} href="#testimonial">
+        Testimonial
+      </a>
+      <a onClick={() => setMenuOpen(false)} href="#contact">
+        Contact
+      </a>
+    </div>
+    <a href="mailto:official.6packprogrammer@gmail.com">
+      <button>Email</button>
+    </a>
+  </>
+);
+
+export default Header;
