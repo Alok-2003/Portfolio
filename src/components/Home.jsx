@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import me from "../assets/img.jpg";
+import me from "../assets/img.png";
 
 const Home = ({ ratio }) => {
   const clientCount = useRef(null);
@@ -48,12 +48,12 @@ const Home = ({ ratio }) => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
-            Hi, I Am <br /> Abhishek Singh
+            Hi, I Am <br /> Alok kumar yadav
           </motion.h1>
 
           <Typewriter
             options={{
-              strings: ["A Developer", "A Designer", "A Creator"],
+              strings: ["A Developer", "A Designer"],
               autoStart: true,
               loop: true,
               cursor: "",
@@ -62,7 +62,7 @@ const Home = ({ ratio }) => {
           />
 
           <div>
-            <a href="mailto:official.6packprogrammer@gmail.com">Hire Me</a>
+            <a href="mailto:alok953280@gmail.com">Hire Me</a>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
@@ -99,7 +99,7 @@ const Home = ({ ratio }) => {
 
             <article data-special>
               <p>Contact</p>
-              <span>official.6packprogrammer@gmail.com</span>
+              <span>alok953280@gmail.com</span>
             </article>
           </aside>
         </div>
