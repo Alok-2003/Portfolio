@@ -71,12 +71,12 @@ const Home = ({ ratio }) => {
           <article>
             <p>
               +
-              {ratio < 2 && (
+              {/* {ratio < 2 && ( */}
                 <motion.span
                   whileInView={animationClientsCount}
                   ref={clientCount}
                 ></motion.span>
-              )}
+              {/* )} */}
             </p>
             <span>Clients Worldwide</span>
           </article>
@@ -85,14 +85,13 @@ const Home = ({ ratio }) => {
             <article>
               <p>
                 +
-                {ratio < 2 && (
+                {/* {ratio < 2 && ( */}
                   <motion.span
                     ref={projectCount}
                     whileInView={animationProjectsCount}
                   >
-                    500
                   </motion.span>
-                )}
+                {/* )} */}
               </p>
               <span>Projects Done</span>
             </article>
@@ -105,7 +104,7 @@ const Home = ({ ratio }) => {
         </div>
       </section>
       <section>
-        <img src={me} alt="Abhishek" />
+        <img src={me} alt="Alok Image" />
       </section>
       <BsChevronDown />
     </div>
