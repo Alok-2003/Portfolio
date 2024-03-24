@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import vg from "../assets/vg.png";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
@@ -60,6 +60,7 @@ const Contact = () => {
     };
     return (
         <div id="contact">
+            <Toaster toastOptions={{ duration: 4000 }} />
             <section>
                 <motion.form onSubmit={submitHandler} {...animations.form}>
                     <h2>Contact Me</h2>
