@@ -10,7 +10,7 @@ const Header = ({ setMenuOpen, menuOpen }) => {
 
       <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
         <AiOutlineMenu />
-      </button>
+      </button> 
     </>
   );
 };
