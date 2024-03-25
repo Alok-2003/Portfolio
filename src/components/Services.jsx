@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiFillIeCircle, AiFillAndroid, AiFillWindows } from "react-icons/ai";
+import { FaComputer } from "react-icons/fa6";
+import { GrDatabase } from "react-icons/gr";
+import { IoLogoDesignernews } from "react-icons/io5";
+import { SiCodingninjas } from "react-icons/si";
 
 const Services = () => {
   const animations = {
@@ -32,16 +36,16 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.one}
         >
-          <h3>5+</h3>
-          <p>Years Experience</p>
+          <h3><FaComputer /></h3>
+          <h2>HTML,CSS,SASS ,TAILWIND,<br/>JAVASCRIPT,REACT,TYPESCRIPT</h2>
         </motion.div>
         <motion.div
           className="serviceBox2"
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
         >
-          <AiFillIeCircle />
-          <span>Web Development</span>
+          <IoLogoDesignernews />
+          <span>Figma</span>         
         </motion.div>
         <motion.div
           className="serviceBox3"
@@ -51,16 +55,16 @@ const Services = () => {
             delay: 0.2,
           }}
         >
-          <AiFillAndroid />
-          <span>App Development</span>
+          <SiCodingninjas />
+          <span>C++ , Python</span>
         </motion.div>
         <motion.div
           className="serviceBox4"
           whileInView={animations.whileInView}
           initial={animations.four}
         >
-          <AiFillWindows />
-          <span>Desktop Development</span>
+          <GrDatabase />
+          <span>Express, Node.js, MongoDb, Firebase, MySql, Postman </span>
         </motion.div>
       </section>
     </div>
