@@ -25,18 +25,18 @@ export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
 
 const NavContent = ({ setMenuOpen }) => (
   <>
-    <h2>Alok.</h2>
+    <h1>Alok</h1>
     <div>
       <a onClick={() => setMenuOpen(false)} href="#home">
         Home
       </a>
+      <a onClick={() => setMenuOpen(false)} href="#services">
+      TechStack
+      </a>
       <a onClick={() => setMenuOpen(false)} href="#work">
-        TechStack
+        Project
       </a>
       <a onClick={() => setMenuOpen(false)} href="#timeline">
-        Projects
-      </a>
-      <a onClick={() => setMenuOpen(false)} href="#services">
         Timeline
       </a>
       <a onClick={() => setMenuOpen(false)} href="#testimonial">

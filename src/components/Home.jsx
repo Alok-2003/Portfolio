@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
+import {  BsChevronDown } from "react-icons/bs";
+import { ImArrowUpRight2 } from "react-icons/im";
+import { FaPlus } from "react-icons/fa";
+import { MdTaskAlt } from "react-icons/md";
 import me from "../assets/img.png";
 
 const Home = ({ ratio }) => {
@@ -9,15 +12,15 @@ const Home = ({ ratio }) => {
   const projectCount = useRef(null);
 
   const animationClientsCount = () => {
-    animate(0, 100, {
+    animate(0, 3, {
       duration: 1,
       onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
     });
   };
   const animationProjectsCount = () => {
-    animate(0, 500, {
+    animate(0, 5, {
       duration: 1,
-      onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
+      onUpdate: (v) => (projectCount.current.textContent = v.toFixed(1)),
     });
   };
 
@@ -53,7 +56,7 @@ const Home = ({ ratio }) => {
 
           <Typewriter
             options={{
-              strings: ["A Developer", "A Designer"],
+              strings: ["A-Developer", "A-Designer"],
               autoStart: true,
               loop: true,
               cursor: "",
@@ -64,27 +67,39 @@ const Home = ({ ratio }) => {
           <div>
             <a href="mailto:alok953280@gmail.com">Hire Me</a>
             <a href="#work">
-              Projects <BsArrowUpRight />
+              Projects <ImArrowUpRight2 />
             </a>
           </div>
 
-          <article>
+          {/* <article>
             <p>
               +
-              {/* {ratio < 2 && ( */}
                 <motion.span
                   whileInView={animationClientsCount}
                   ref={clientCount}
                 ></motion.span>
-              {/* )} */}
             </p>
             <span>Clients Worldwide</span>
-          </article>
+          </article> */}
 
           <aside>
             <article>
               <p>
-                +
+              <FaPlus />
+                {/* {ratio < 2 && ( */}
+                  <motion.span
+                    ref={clientCount}
+                    whileInView={animationClientsCount}
+                  >
+                  </motion.span>
+                {/* )} */}
+              </p>
+              <span>Worldwide Client</span>
+            </article>
+
+            <article data-special>
+              <p>
+              <MdTaskAlt />
                 {/* {ratio < 2 && ( */}
                   <motion.span
                     ref={projectCount}
@@ -94,11 +109,6 @@ const Home = ({ ratio }) => {
                 {/* )} */}
               </p>
               <span>Projects Done</span>
-            </article>
-
-            <article data-special>
-              <p>Contact</p>
-              <span>alok953280@gmail.com</span>
             </article>
           </aside>
         </div>
