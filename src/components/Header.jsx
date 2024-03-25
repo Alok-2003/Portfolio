@@ -10,7 +10,7 @@ const Header = ({ setMenuOpen, menuOpen }) => {
 
       <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
         <AiOutlineMenu />
-      </button> 
+      </button>
     </>
   );
 };
@@ -31,13 +31,13 @@ const NavContent = ({ setMenuOpen }) => (
         Home
       </a>
       <a onClick={() => setMenuOpen(false)} href="#work">
-        Work
+        TechStack
       </a>
       <a onClick={() => setMenuOpen(false)} href="#timeline">
-        Experience
+        Projects
       </a>
       <a onClick={() => setMenuOpen(false)} href="#services">
-        Services
+        Timeline
       </a>
       <a onClick={() => setMenuOpen(false)} href="#testimonial">
         Testimonial

@@ -18,6 +18,8 @@
   font-family: $text2;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #fef2f2 #f26440;
 }
 a {
   text-decoration: none;
