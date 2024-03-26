@@ -1,20 +1,27 @@
 #work {
     width: 100%;
     height: 100vh;
-    padding: 8rem $p;
+    // padding: 8rem $p;
+    background-color: $color4;
     > h2 {
-      font: 700 2.5rem $text2;
+      font: 100 3.5rem $text5;
       width: fit-content;
       border-bottom: 1px solid $color6_1;
-      padding: 0.5rem;
+      padding-top: 10rem;
       margin: auto;
+    }
+    .carousel .control-dots{
+      margin:0;
+    }
+    .carousel .control-dots .dot{
+      background: black;
     }
   
     > section {
-      margin-top: 4rem;
+      // margin-top: 4rem;
       width: 100%;
       height: 100%;
-      background-color: $color5;
+      background-color: $color4;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -26,13 +33,13 @@
   
       .workItem {
         overflow-y: auto;
-        height: 25vmax;
+        height: 25rem;
         width: 95%;
         margin: auto;
         background-color: $color4;
         display: flex;
         padding: 2rem;
-        box-shadow: 0 0 20px 5px $color1;
+        box-shadow: 0 0 55px 7px $color1;
   
         > img {
           border-radius: 20px;
