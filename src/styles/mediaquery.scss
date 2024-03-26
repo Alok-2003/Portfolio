@@ -1,375 +1,398 @@
 @media screen and (max-width: 1367px) {
-    nav {
-      padding: 0 $p_md;
-    }
-  
-    #home {
-      height: 100vh;
-      > section {
-        &:first-of-type {
-          padding-left: $p_md;
-          > div aside {
-            width: 85%;
-          }
+  nav {
+    padding: 0 $p_md;
+  }
+
+  #home {
+    height: 100vh;
+    > section {
+      &:first-of-type {
+        padding-left: $p_md;
+        > div aside {
+          width: 85%;
         }
       }
     }
-  
-    #work {
-      padding: 0rem 0;
-      height: 100vh;
-      > section {
+  }
+
+  #work {
+    padding: 0rem 0;
+    height: 100vh;
+    > section {
+      height: 20rem;
+      > article {
         height: 20rem;
-        > article {
-          height: 20rem;
-          width: 90%;
-        }
-        .workItem {
-          padding: 2rem;
-          // height: 24rem;
-          > aside {
-            > p {
-              margin: 1rem;
-            }
-            > a {
-              margin: 1rem;
-            }
+        width: 90%;
+      }
+      .workItem {
+        padding: 2rem;
+        // height: 24rem;
+        > aside {
+          > p {
+            margin: 1rem;
+          }
+          > a {
+            margin: 1rem;
           }
         }
       }
     }
-  
-    #services {
-      // padding: $p_base;
-      padding-top: $p_md;
-      > section {
-        height: 90%;
+  }
+
+  #services {
+    // padding: $p_base;
+    padding-top: $p_md;
+    > section {
+      height: 90%;
+    }
+  }
+  #testimonial {
+    padding: $p_md;
+    // padding-bottom: 10rem;
+    > section {
+      width: 100%;
+    }
+  }
+
+  #contact > section > form {
+    > input,
+    > button {
+      font: 100 1rem $text5;
+      width: 50%;
+    }
+  }
+
+  footer {
+    padding-left: $p_md;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    padding: 0 $p_base;
+  }
+
+  #home {
+    height: 110vh;
+    > section {
+      &:first-of-type {
+        padding-left: $p_base;
+        > div {
+          > h1 {
+            font: 900 3rem $text1;
+          }
+
+          aside {
+            width: 100%;
+          }
+        }
       }
     }
-    #testimonial {
-      padding: $p_md;
-      // padding-bottom: 10rem;
-      > section {
-        width: 100%;
+  }
+
+  #work {
+    padding: 8rem $p_base;
+  }
+
+  #services {
+    padding: $p_base_inverse;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 0 $p_sm;
+    > h2 {
+      font-size: 1.8rem;
+    }
+    > div {
+      gap: 1rem;
+    }
+  }
+
+  #home {
+    > section {
+      &:first-of-type {
+        padding-left: $p_sm;
+        > div {
+          > div {
+            gap: 2rem;
+            width: 100%;
+          }
+          aside {
+            flex-direction: column;
+          }
+        }
       }
     }
-  
-    #contact > section > form {
-      > input,
-      > button {
-        font: 100 1rem $text5;
+  }
+
+  #work {
+    padding: 8rem $p_zero;
+    > section {
+      > article {
+        height: 25rem;
+      }
+      .workItem {
+        height: 25rem;
+      }
+    }
+  }
+
+  #services {
+    padding: $p_sm_inverse;
+    height: 90vh;
+  }
+  #testimonial {
+    padding: $p_zero;
+    > h2 {
+      padding: 3rem;
+      margin-bottom: 0%;
+    }
+    > section {
+      padding: 3rem;
+      height: 45rem;
+      justify-content: space-evenly;
+
+      > article {
+        width: 40%;
+        height: 50%;
+      }
+    }
+  }
+
+  #contact > section > form {
+    > h2 {
+      font: 100 2.3rem $text2;
+    }
+    > input,
+    > button {
+      width: 65%;
+    }
+  }
+
+  footer {
+    padding-left: $p_zero;
+    grid-template-columns: 1fr;
+    > div {
+      width: 100%;
+      border: none;
+      p {
         width: 50%;
+        margin: 2rem auto;
       }
     }
-  
-    footer {
-      padding-left: $p_md;
+    > a {
+      margin: 1rem;
     }
   }
-  
-  @media screen and (max-width: 1100px) {
-    nav {
-      padding: 0 $p_base;
-    }
-  
-    #home {
-      height: 110vh;
-      > section {
-        &:first-of-type {
-          padding-left: $p_base;
-          > div {
-            > h1 {
-              font: 900 3rem $text1;
-            }
-  
-            aside {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  
-    #work {
-      padding: 8rem $p_base;
-    }
-  
-    #services {
-      padding: $p_base_inverse;
-      text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+  nav {
+    > div,
+    > a {
+      display: none;
     }
   }
-  
-  @media screen and (max-width: 900px) {
-    nav {
-      padding: 0 $p_sm;
-      > h2 {
-        font-size: 1.8rem;
-      }
-      > div {
-        gap: 1rem;
-      }
-    }
-  
-    #home {
-      > section {
-        &:first-of-type {
-          padding-left: $p_sm;
-          > div {
-            > div {
-              gap: 2rem;
-              width: 100%;
-            }
-            aside {
-              flex-direction: column;
-            }
-          }
-        }
-      }
-    }
-  
-    #work {
-      padding: 8rem $p_zero;
-      > section {
-        > article {
-          height: 25rem;
-        }
-        .workItem {
-          height: 25rem;
-        }
-      }
-    }
-  
-    #services {
-      padding: $p_sm_inverse;
-      height: 90vh;
-    }
-    #testimonial {
-      padding: $p_zero;
-      > h2 {
-        padding: 3rem;
-        margin-bottom: 0%;
-      }
-      > section {
-        padding: 3rem;
-        height: 45rem;
-        justify-content: space-evenly;
-  
-        > article {
-          width: 40%;
-          height: 50%;
-        }
-      }
-    }
-  
-    #contact > section > form {
-      > h2 {
-        font: 100 2.3rem $text2;
-      }
-      > input,
-      > button {
-        width: 65%;
-      }
-    }
-  
-    footer {
-      padding-left: $p_zero;
-      grid-template-columns: 1fr;
-      > div {
-        width: 100%;
-        border: none;
-        p {
-          width: 50%;
-          margin: 2rem auto;
-        }
-      }
-      > a {
-        margin: 1rem;
-      }
-    }
+  .navBtn {
+    display: block;
   }
-  
-  @media screen and (max-width: 786px) {
-    nav {
-      > div,
-      > a {
-        display: none;
-      }
-    }
-    .navBtn {
-      display: block;
-    }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0 2rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    nav{
-      padding: 0 2rem;
-    }
-    #home {
-      height: unset;
-      flex-direction: column-reverse;
-  
-      > section {
-        &:first-of-type {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          padding: 0;
-  
-          > div {
-            border: none;
-            padding-top: 2rem;
-            padding-bottom: 0;
-            > h1 {
-              font: 900 2.5rem $text7;
-            }
-            > div {
-              flex-direction: column;
-              margin-top: 1rem;
-              margin-bottom: 4rem;
-            }
-            aside {
-              align-items: center;
-            }
-  
-            article[data-special] {
-              width: 70%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              span {
-                display: block;
-                width: 70%;
-                word-wrap: break-word;
-              }
-            }
-  
-            article {
-              width: 70%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              &::after {
-                top: -10%;
-                left: -5%;
-                height: 6rem;
-              }
-            }
-          }
-        }
-  
-        &:last-of-type {
+  #home {
+    height: unset;
+    flex-direction: column-reverse;
+
+    > section {
+      &:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+
+        > div {
           border: none;
-        }
-      }
-  
-      > svg {
-        font-size: 2rem;
-        bottom: 2%;
-      }
-    }
-  
-    #work {
-      padding-top: 0;
-      >h2{
-        padding-top: 7rem;
-      }
-      > section {
-        > article {
-          width: 100%;
-          height: 30vmax;
-        }
-        .workItem {
-          height: 60vmax;
-          width: 100%;
-          box-shadow: 0 0 5px $color1;
-          // border-radius: 20px ;
-          > aside {
-            padding: 1rem;
-            border-right: 6px solid black;
-            border-top: 6px solid black;
-            border-bottom: 6px solid black;
-            // border:solid 2px 2px 0px 2px black;
-            border-radius: 2pc;
-  
-            > h3 {
-              margin: 1rem;
+          padding-top: 2rem;
+          padding-bottom: 0;
+          > h1 {
+            font: 900 2.5rem $text7;
+          }
+          > div {
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+          }
+          aside {
+            align-items: center;
+          }
+
+          article[data-special] {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+              display: block;
+              width: 70%;
+              word-wrap: break-word;
             }
-  
-            > p {
-              letter-spacing: 0;
-              line-height: unset;
-              margin: 0%;
-              font-size: 0.75rem;
-            }
-  
-            > a {
-              padding: 0.4rem 0.7rem;
-              font-size: 0.7rem;
-              margin: 1rem;
+          }
+
+          article {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::after {
+              top: -10%;
+              left: -5%;
+              height: 6rem;
             }
           }
         }
       }
-    }
-  
-    #timeline {
-      .timelineBox::after {
-        left: 31px;
-      }
-  
-      .timelineItem {
-        width: 100%;
-        padding-left: 5rem;
-        padding-right: 2rem;
-        &:nth-child(odd) {
-          text-align: left;
-        }    
-      }
-  
-      .rightTimeline {
-        left: 0%;
-      }
-      .leftTimeline,
-      .rightTimeline {
-        &::after {
-          left: 15px;
-        }
+
+      &:last-of-type {
+        border: none;
       }
     }
-  
-    #services {
-      height: 100vh;
-      > section {
-        // margin: 3rem 0;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        .serviceBox1 {
-          grid-column: 1/3;
-          grid-row: unset;
-        }
-  
-        .serviceBox4 {
-          grid-column: 1/3;
-        }
-      }
+
+    > svg {
+      font-size: 2rem;
+      bottom: 2%;
     }
-    #testimonial > section {
-      padding-top: 5rem;
-      height: unset;
-      gap: 3rem;
+  }
+
+  #work {
+    padding-top: 0;
+    > h2 {
+      padding-top: 7rem;
+    }
+    > section {
       > article {
         width: 100%;
-        height: 70vw;
-        margin: 10px 10px;
+        height: 30vmax;
       }
-    }
-  
-    #contact {
-      grid-template-columns: 1fr;
-      > aside {
-        display: none;
+      .workItem {
+        height: 60vmax;
+        width: 100%;
+        box-shadow: 0 0 5px $color1;
+        // border-radius: 20px ;
+        > aside {
+          padding: 1rem;
+          border-right: 6px solid black;
+          border-top: 6px solid black;
+          border-bottom: 6px solid black;
+          // border:solid 2px 2px 0px 2px black;
+          border-radius: 2pc;
+
+          > h3 {
+            margin: 1rem;
+          }
+
+          > p {
+            letter-spacing: 0;
+            line-height: unset;
+            margin: 0%;
+            font-size: 0.75rem;
+          }
+
+          > a {
+            padding: 0.4rem 0.7rem;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+        }
       }
     }
   }
+
+  #timeline {
+    .timelineBox::after {
+      left: 31px;
+    }
+
+    .timelineItem {
+      width: 100%;
+      padding-left: 5rem;
+      padding-right: 2rem;
+      &:nth-child(odd) {
+        text-align: left;
+      }
+    }
+
+    .rightTimeline {
+      left: 0%;
+    }
+    .leftTimeline,
+    .rightTimeline {
+      &::after {
+        left: 15px;
+      }
+    }
+  }
+
+  #services {
+    height: 100vh;
+    > section {
+      // margin: 3rem 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .serviceBox1 {
+        grid-column: 1/3;
+        grid-row: unset;
+      }
+
+      .serviceBox4 {
+        grid-column: 1/3;
+      }
+    }
+  }
+  #testimonial > section {
+    padding-top: 5rem;
+    height: unset;
+    gap: 3rem;
+    > article {
+      width: 100%;
+      height: 70vw;
+      margin: 10px 10px;
+    }
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+    > aside {
+      display: none;
+    }
+  }
+  footer {
+    padding-left: $p_zero;
+    grid-template-columns: 1fr;
+    > div {
+      width: 100%;
+      border: none;
+      p {
+        width: 100%;
+        margin: 1rem auto;
+      }
+    }
+    > a {
+      margin: 1rem;
+    }
+    > aside > article{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem;
+    }
+  }
+}
+
