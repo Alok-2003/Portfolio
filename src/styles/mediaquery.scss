@@ -48,6 +48,7 @@
     }
     #testimonial {
       padding: $p_md;
+      // padding-bottom: 10rem;
       > section {
         width: 100%;
       }
@@ -56,7 +57,7 @@
     #contact > section > form {
       > input,
       > button {
-        font: 400 0.8rem $text1;
+        font: 100 1rem $text5;
         width: 50%;
       }
     }
