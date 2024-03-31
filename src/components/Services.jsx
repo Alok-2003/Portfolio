@@ -36,7 +36,7 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.one}
         >
-          <h3><FaComputer /></h3>
+          {/* <h3><FaComputer /></h3> */}
           <h2> 
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="60" height="60"/>
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="60" height="60"/>
@@ -53,7 +53,7 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
         >
-          <IoLogoDesignernews />
+          {/* <IoLogoDesignernews /> */}
           <span><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="60" height="60"/></span>
         </motion.div>
         <motion.div
@@ -64,9 +64,10 @@ const Services = () => {
             delay: 0.2,
           }}
         >
-          <SiCodingninjas />
+          {/* <SiCodingninjas /> */}
           <span>
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="60" height="60" />,
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="60" height="60" />
+            &nbsp;
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60" /></span>
         </motion.div>
         <motion.div
@@ -74,12 +75,13 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.four}
         >
-          <GrDatabase />
+          {/* <GrDatabase /> */}
           <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" width="60" height="60"/>  &nbsp;
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="60" height="60"/>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="60" height="60"/>
           <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="60" height="60"/>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/> 
+          &nbsp;
           <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="60" height="60"/>
           </span>
         </motion.div>
