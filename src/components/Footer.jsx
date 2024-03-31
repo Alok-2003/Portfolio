@@ -17,6 +17,7 @@ const Footer = () => {
 
                 <h2>Alok kumar yadav</h2>
                 <p>Motivation is temporary, but discipline last forever.</p>
+                <p>शक्ति सर्व प्रिय</p>
             </div>
 
             <aside>
