@@ -11,9 +11,11 @@
       margin: auto;
     }
     .carousel .control-dots{
-      margin:0;
+      margin-bottom: 15px;
     }
     .carousel .control-dots .dot{
+      width: 15px;
+      height: 15px;
       background: black;
     }
   
@@ -39,11 +41,14 @@
         background-color: $color4;
         display: flex;
         padding: 2rem;
-        box-shadow: 0 0 55px 7px $color1;
-  
+        box-shadow: 0 0 100px 7px $color6_3;
+        
         > img {
-          border-radius: 20px;
-          width: 40%;
+          // border-radius: 20px;
+          border: 1px solid black;
+          border-radius: 8px;
+          height: 80%;
+          width: 45%;
           object-fit: contain;
         }
   
@@ -63,13 +68,14 @@
             font-size: 20px;
           }
           > a {
-            background-color: $color3;
+            background-color: $color1;
             padding: 0.7rem 2rem;
             margin: 2rem;
             color: $color4;
             transition: all 0.5s;
             &:hover {
-              background-color: $color3_1;
+              background-color: $color6_3;
+              color: $color1;
             }
           }
         }
