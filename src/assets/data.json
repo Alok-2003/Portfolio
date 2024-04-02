@@ -1,41 +1,39 @@
 {
     "projects": [
       {
-        "date": "07/10/2022",
+        "date": "15/03/2024",
+        "title": "Portfolio",
+        "description": "My latest full-stack portfolio uses React for the frontend and Sass for styling. Firebase is utilized for the backend, particularly in the implementation of the contact form.",
+        "url": "https://alok-2003.vercel.app/",
+        "imgSrc": "src/assets/Portfolio.png"
+      },
+      {
+        "date": "07/11/2023",
         "title": "Hotel Hub",
         "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
         "url": "https://hotelhub-dn4b.onrender.com/listings",
         "imgSrc": "src/assets/HotelHub.png"
       },
-  
       {
-        "date": "11/10/2022",
+        "date": "21/9/2023",
         "title": "Biostack",
         "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
         "url": "https://alok-2003.github.io/Biostack/",
-        "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+        "imgSrc": "src/assets/BioStack.png"
+      },
+      {
+        "date": "17/10/2022",
+        "title": "Shoping site",
+        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+        "url": "https://alok-2003.github.io/Admire-style/",
+        "imgSrc": "src/assets/ShopingSite.png"
       },
       {
         "date": "15/10/2022",
         "title": "To-Do List",
         "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
         "url": "https://alok-2003.github.io/TO-DO/",
-        "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
-      },
-  
-      {
-        "date": "17/10/2022",
-        "title": "Shoping site",
-        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-        "url": "https://alok-2003.github.io/Admire-style/",
-        "imgSrc": "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg"
-      },
-      {
-        "date": "20/10/2022",
-        "title": "PORTFOLIO",
-        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-        "url": "/",
-        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+        "imgSrc": "src/assets/To-do.png"
       }
     ]
   }

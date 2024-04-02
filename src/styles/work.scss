@@ -44,7 +44,7 @@
         > img {
           border-radius: 20px;
           width: 40%;
-          object-fit: cover;
+          object-fit: contain;
         }
   
         > aside {
@@ -53,11 +53,14 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-  
+          >h3{
+            font-size: 38px;
+          }
           > p {
-            letter-spacing: 3px;
+            letter-spacing: 1px;
             line-height: 180%;
             margin: 2rem;
+            font-size: 20px;
           }
           > a {
             background-color: $color3;
