@@ -5,35 +5,35 @@
         "title": "Portfolio",
         "description": "My latest full-stack portfolio uses React for the frontend and Sass for styling. Firebase is utilized for the backend, particularly in the implementation of the contact form.",
         "url": "https://alok-2003.vercel.app/",
-        "imgSrc": "src/assets/Portfolio.png"
+        "imgSrc": "./src/assets/Portfolio.png"
       },
       {
         "date": "07/11/2023",
         "title": "Hotel Hub",
         "description": "This is an Admin portal for hotel listings created during learning full stack(MERN) using EJS templating, where MVC architecture is implemented and all CRUD operations can be performed by the Admin.",
         "url": "https://hotelhub-dn4b.onrender.com/listings",
-        "imgSrc": "src/assets/HotelHub.png"
+        "imgSrc": "./src/assets/HotelHub.png"
       },
       {
         "date": "21/9/2023",
         "title": "Biostack",
         "description": "Biostack was developed by me during SIH at the college level for a team, in which I implemented an animated carousel on the homepage and a standard design.",
         "url": "https://alok-2003.github.io/Biostack/",
-        "imgSrc": "src/assets/BioStack.png"
+        "imgSrc": "./src/assets/BioStack.png"
       },
       {
         "date": "10/06/2023",
         "title": "Shoping site",
         "description": "Admire and Style is a shopping site which I created during my second semester of college as a project, solely with my knowledge of HTML, CSS, and basic JavaScript.",
         "url": "https://alok-2003.github.io/Admire-style/",
-        "imgSrc": "src/assets/ShopingSite.png"
+        "imgSrc": "./src/assets/ShopingSite.png"
       },
       {
         "date": "04/02/2023",
         "title": "To-Do List",
         "description": "This is a to-do list that works solely on the frontend, created using HTML, CSS, and JavaScript.",
         "url": "https://alok-2003.github.io/TO-DO/",
-        "imgSrc": "src/assets/To-do.png"
+        "imgSrc": "./src/assets/To-do.png"
       }
     ]
   }

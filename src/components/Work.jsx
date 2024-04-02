@@ -17,7 +17,7 @@ const Work = () => {
             showThumbs={false}
             interval={2500}
             infiniteLoop={true}
-            autoPlay={false}
+            autoPlay={true}
           >
             {data.projects.map((i) => (
               <div key={i.title} className="workItem">
