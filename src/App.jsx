@@ -5,9 +5,9 @@ import TechStack from "./components/Services";
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { Toaster } from "react-hot-toast";
-import { useEffect, useState } from "react";
 import Projects from "./components/Work";
+import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "../assets/data.json";
 
 const Work = () => {
+  
   return (
     <div id="work">
       <h2>Projects</h2>
