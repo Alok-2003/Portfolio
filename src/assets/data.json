@@ -8,6 +8,13 @@
         "imgSrc": "https://firebasestorage.googleapis.com/v0/b/portfolio-21602.appspot.com/o/Portfolio.png?alt=media&token=e4cb4bf0-4ee9-4d77-a250-60c640c50d49"
       },
       {
+        "date": "17/02/2024",
+        "title": "profX",
+        "description": "This is ProfX, an Analytic Professor dashboard developed during Cipherthon 2.0, where we clinched the 4th position. ProfX helps professors analyze student performance more easily. There is a chatbot model included which assists professors in generating quiz questions or assignments,currenty it is not deployed due to seprate backend",
+        "url": "",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/portfolio-21602.appspot.com/o/profX.png?alt=media&token=5d6581d6-6b41-4f6f-b2e7-843ebb70a02a"
+      },
+      {
         "date": "07/11/2023",
         "title": "Hotel Hub",
         "description": "This is an Admin portal for hotel listings created during learning full stack(MERN) using EJS templating, where MVC architecture is implemented and all CRUD operations can be performed by the Admin.",
